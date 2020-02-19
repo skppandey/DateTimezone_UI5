@@ -1,0 +1,16 @@
+<mvc:View controllerName="Date.DatePicker.controller.Date" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						
+					<!--	<DatePicker id="sPicker"  displayFormat="MM/dd/YYYY"  />-->
+						<DatePicker  id="sPicker"  value="{path: 'coreModel>/syDate', type: 'sap.ui.model.type.Date', formatOptions: {pattern: 'MM/dd/yyyy', strictParsing: true , UTC: true}}" width="10em"  required="true"/>
+						<Button text="Save" press="onSave"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
